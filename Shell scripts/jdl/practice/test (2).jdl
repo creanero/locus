@@ -1,0 +1,6 @@
+Executable = "hello_world.sh";
+StdOutput = "std.out";
+StdError = "std.err";
+OutputSandbox = {"std.out","std.err"};
+InputSandbox = "hello_world.sh";
+VirtualOrganisation = "cosmo";

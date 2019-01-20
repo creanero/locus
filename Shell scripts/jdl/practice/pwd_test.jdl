@@ -1,0 +1,6 @@
+Executable = "pwd_test.sh";
+StdOutput = "std.out";
+StdError = "std.err";
+OutputSandbox = {"std.out","std.err"};
+InputSandbox = "pwd_test.sh";
+VirtualOrganisation = "cosmo";

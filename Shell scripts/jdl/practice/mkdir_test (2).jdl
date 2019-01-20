@@ -1,0 +1,6 @@
+Executable = "mkdir_test.sh";
+StdOutput = "std.out";
+StdError = "std.err";
+OutputSandbox = {"std.out","std.err"};
+InputSandbox = "mkdir_test.sh";
+VirtualOrganisation = "cosmo";

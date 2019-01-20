@@ -1,0 +1,8 @@
+Executable = "call_api_3_0.sh";
+StdOutput = "std.out";
+StdError = "std.err";
+Arguments = "test_0_5.prm test_0_5.txt";
+#Arguments = "ittd/grid_cdm/data/parameters/prm/test18-5-2010/test_0_5.prm ittd/grid_cdm/data/parameters/prm/test18-5-2010/test_0_5.txt";
+OutputSandbox = {"std.out","std.err"};
+InputSandbox = {"call_api_3_0.sh","ittd/grid_cdm/data/parameters/prm/test18-5-2010/test_0_5.prm", "ittd/grid_cdm/data/parameters/prm/test18-5-2010/test_0_5.txt"};
+VirtualOrganisation = "cosmo";

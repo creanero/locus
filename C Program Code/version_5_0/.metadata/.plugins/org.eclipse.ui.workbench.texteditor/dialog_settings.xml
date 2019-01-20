@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="403" key="DIALOG_WIDTH"/>
+		<item value="329" key="DIALOG_Y_ORIGIN"/>
+		<item value="0" key="DIALOG_X_ORIGIN"/>
+		<item value="441" key="DIALOG_HEIGHT"/>
+		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="flag" key="selection"/>
+		<list key="findhistory">
+			<item value="flag"/>
+			<item value="fits_get_colname"/>
+			<item value="if"/>
+			<item value="malloc"/>
+			<item value="fits_read"/>
+			<item value="form_mag"/>
+			<item value="mag"/>
+			<item value="scanf"/>
+		</list>
+		<list key="replacehistory">
+			<item value="fp_out_fits"/>
+			<item value="*p_colour"/>
+			<item value="p_colour"/>
+			<item value="*(p_input_array)"/>
+			<item value="mag[colour_number]"/>
+			<item value="(*p_input_array)"/>
+			<item value="(*p_target)"/>
+			<item value="(*p_target_star)"/>
+		</list>
+	</section>
+</section>

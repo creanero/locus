@@ -1,0 +1,11 @@
+#Thu Oct 22 15:34:07 IST 2009
+org.eclipse.core.net.hasMigrated=true
+proxyData/HTTPS/port=8080
+proxyData/HTTP/host=proxy1.it-tallaght.ie
+nonProxiedHosts=127.0.0.1|localhost
+proxyData/HTTP/hasAuth=false
+proxiesEnabled=true
+proxyData/HTTP/port=8080
+eclipse.preferences.version=1
+proxyData/HTTPS/hasAuth=false
+proxyData/HTTPS/host=proxy1.it-tallaght.ie

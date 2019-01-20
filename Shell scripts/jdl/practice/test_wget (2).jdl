@@ -1,0 +1,10 @@
+
+Executable = "wget";
+StdOutput = "std.out";
+StdError = "std.err";
+Arguments = "http://das.sdss.org/imaging/745/40/calibChunks/2/tsObj-000745-2-40-0609.fit";
+#Arguments = "ittd/grid_cdm/data/parameters/prm/test18-5-2010/test_0_5.prm ittd/grid_cdm/data/parameters/prm/test18-5-2010/test_0_5.txt";
+OutputSandbox = {"std.out","std.err","tsObj-000745-2-40-0609.fit"};
+InputSandbox = {"call_api_2_0.sh"};
+VirtualOrganisation = "cosmo";
+

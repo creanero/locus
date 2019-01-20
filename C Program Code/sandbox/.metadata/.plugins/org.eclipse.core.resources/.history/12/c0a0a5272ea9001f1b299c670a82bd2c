@@ -1,0 +1,39 @@
+/*
+ ============================================================================
+ Name        : test_for_featac.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+int extract_code (char *code_string, char *exit_string);
+
+int main() {
+	char *code_string = (char *) malloc(50*sizeof(char));
+
+	char *exit_string = (char *) malloc(50*sizeof(char));
+	
+	printf ("Enter a string");
+	scanf ("%s", code_string);
+	
+	printf("code entered was %s", code_string);
+	
+	extract_code (code_string, exit_string);
+	
+	printf("code returned was %s", exit_string);
+	
+	return EXIT_SUCCESS;
+}
+
+int extract_code (char *code_string, char *exit_string)
+{
+	sscanf(code_string, "\t\t\t\tcode=%s", exit_string);
+	return (0);
+}

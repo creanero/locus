@@ -1,0 +1,223 @@
+!SESSION 2010-11-03 15:55:18.125 -----------------------------------------------
+eclipse.buildId=M20071023-1652
+java.version=1.6.0_04
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_IE
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2010-11-03 15:55:25.138
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2010-11-11 12:49:15.473 -----------------------------------------------
+eclipse.buildId=M20071023-1652
+java.version=1.6.0_04
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_IE
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2010-11-11 12:49:20.903
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2010-11-17 18:24:29.615 -----------------------------------------------
+eclipse.buildId=M20071023-1652
+java.version=1.6.0_04
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_IE
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2010-11-17 18:24:36.761
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2011-01-19 17:12:43.217 -----------------------------------------------
+eclipse.buildId=M20071023-1652
+java.version=1.6.0_04
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_IE
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2011-01-25 16:15:50.169
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.core 4 0 2011-01-25 17:14:41.806
+!MESSAGE IOException
+!STACK 0
+java.nio.channels.ClosedByInterruptException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:184)
+	at sun.nio.ch.FileChannelImpl.read(FileChannelImpl.java:630)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:123)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:42)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:197)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getInt(Database.java:345)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:58)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:67)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:565)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:585)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:534)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPNamespace.find(PDOMCPPNamespace.java:114)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPScope.getBinding(CPPScope.java:119)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPVisitor.createBinding(CPPVisitor.java:524)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPVisitor.createBinding(CPPVisitor.java:192)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTName.resolveBinding(CPPASTName.java:78)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPVisitor$CollectDeclarationsAction.visit(CPPVisitor.java:1210)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTName.accept(CPPASTName.java:148)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTDeclarator.accept(CPPASTDeclarator.java:125)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTSimpleDeclaration.accept(CPPASTSimpleDeclaration.java:74)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTNamespaceDefinition.accept(CPPASTNamespaceDefinition.java:88)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTTranslationUnit.accept(CPPASTTranslationUnit.java:570)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPVisitor.getDeclarations(CPPVisitor.java:2025)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTTranslationUnit.getDefinitionsInAST(CPPASTTranslationUnit.java:213)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover$ComputeSourceRunnable.findDefinitions(CSourceHover.java:517)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover$ComputeSourceRunnable.computeSourceForBinding(CSourceHover.java:225)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover$ComputeSourceRunnable.runOnAST(CSourceHover.java:139)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:215)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:310)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover.searchInIndex(CSourceHover.java:759)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover.getHoverInfo(CSourceHover.java:586)
+	at org.eclipse.cdt.internal.ui.text.c.hover.BestMatchHover.getHoverInfo(BestMatchHover.java:100)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CEditorTextHoverProxy.getHoverInfo(CEditorTextHoverProxy.java:64)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:165)
+
+!ENTRY org.eclipse.cdt.core 4 0 2011-01-25 17:14:41.809
+!MESSAGE IOException
+!STACK 0
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.FileChannelImpl.ensureOpen(FileChannelImpl.java:91)
+	at sun.nio.ch.FileChannelImpl.read(FileChannelImpl.java:616)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:123)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:42)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:197)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getInt(Database.java:345)
+	at org.eclipse.cdt.internal.core.pdom.dom.PDOMNamedNode.getDBName(PDOMNamedNode.java:58)
+	at org.eclipse.cdt.internal.core.pdom.dom.NamedNodeCollector.compare(NamedNodeCollector.java:67)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:565)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:585)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:585)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:534)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPNamespace.find(PDOMCPPNamespace.java:114)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPScope.getBinding(CPPScope.java:119)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPVisitor.createBinding(CPPVisitor.java:524)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPVisitor.createBinding(CPPVisitor.java:192)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTName.resolveBinding(CPPASTName.java:78)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPVisitor$CollectDeclarationsAction.visit(CPPVisitor.java:1210)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTName.accept(CPPASTName.java:148)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTDeclarator.accept(CPPASTDeclarator.java:125)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTSimpleDeclaration.accept(CPPASTSimpleDeclaration.java:74)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTNamespaceDefinition.accept(CPPASTNamespaceDefinition.java:88)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTTranslationUnit.accept(CPPASTTranslationUnit.java:570)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPVisitor.getDeclarations(CPPVisitor.java:2025)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTTranslationUnit.getDefinitionsInAST(CPPASTTranslationUnit.java:213)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover$ComputeSourceRunnable.findDefinitions(CSourceHover.java:517)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover$ComputeSourceRunnable.computeSourceForBinding(CSourceHover.java:225)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover$ComputeSourceRunnable.runOnAST(CSourceHover.java:139)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:215)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:310)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover.searchInIndex(CSourceHover.java:759)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover.getHoverInfo(CSourceHover.java:586)
+	at org.eclipse.cdt.internal.ui.text.c.hover.BestMatchHover.getHoverInfo(BestMatchHover.java:100)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CEditorTextHoverProxy.getHoverInfo(CEditorTextHoverProxy.java:64)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:165)
+
+!ENTRY org.eclipse.cdt.core 4 0 2011-01-25 17:14:41.810
+!MESSAGE IOException
+!STACK 0
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.FileChannelImpl.ensureOpen(FileChannelImpl.java:91)
+	at sun.nio.ch.FileChannelImpl.read(FileChannelImpl.java:616)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:123)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:42)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:197)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:550)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:585)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:585)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:534)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPNamespace.find(PDOMCPPNamespace.java:114)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPScope.getBinding(CPPScope.java:119)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPVisitor.createBinding(CPPVisitor.java:524)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPVisitor.createBinding(CPPVisitor.java:192)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTName.resolveBinding(CPPASTName.java:78)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPVisitor$CollectDeclarationsAction.visit(CPPVisitor.java:1210)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTName.accept(CPPASTName.java:148)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTDeclarator.accept(CPPASTDeclarator.java:125)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTSimpleDeclaration.accept(CPPASTSimpleDeclaration.java:74)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTNamespaceDefinition.accept(CPPASTNamespaceDefinition.java:88)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTTranslationUnit.accept(CPPASTTranslationUnit.java:570)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPVisitor.getDeclarations(CPPVisitor.java:2025)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTTranslationUnit.getDefinitionsInAST(CPPASTTranslationUnit.java:213)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover$ComputeSourceRunnable.findDefinitions(CSourceHover.java:517)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover$ComputeSourceRunnable.computeSourceForBinding(CSourceHover.java:225)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover$ComputeSourceRunnable.runOnAST(CSourceHover.java:139)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:215)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:310)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover.searchInIndex(CSourceHover.java:759)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover.getHoverInfo(CSourceHover.java:586)
+	at org.eclipse.cdt.internal.ui.text.c.hover.BestMatchHover.getHoverInfo(BestMatchHover.java:100)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CEditorTextHoverProxy.getHoverInfo(CEditorTextHoverProxy.java:64)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:165)
+
+!ENTRY org.eclipse.cdt.core 4 0 2011-01-25 17:14:41.810
+!MESSAGE IOException
+!STACK 0
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.FileChannelImpl.ensureOpen(FileChannelImpl.java:91)
+	at sun.nio.ch.FileChannelImpl.read(FileChannelImpl.java:616)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.read(Database.java:123)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.read(Chunk.java:42)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.getChunk(Database.java:197)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:550)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:594)
+	at org.eclipse.cdt.internal.core.pdom.db.BTree.accept(BTree.java:534)
+	at org.eclipse.cdt.internal.core.pdom.dom.cpp.PDOMCPPNamespace.find(PDOMCPPNamespace.java:114)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPScope.getBinding(CPPScope.java:119)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPVisitor.createBinding(CPPVisitor.java:524)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPVisitor.createBinding(CPPVisitor.java:192)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTName.resolveBinding(CPPASTName.java:78)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPVisitor$CollectDeclarationsAction.visit(CPPVisitor.java:1210)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTName.accept(CPPASTName.java:148)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTDeclarator.accept(CPPASTDeclarator.java:125)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTSimpleDeclaration.accept(CPPASTSimpleDeclaration.java:74)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTNamespaceDefinition.accept(CPPASTNamespaceDefinition.java:88)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTTranslationUnit.accept(CPPASTTranslationUnit.java:570)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPVisitor.getDeclarations(CPPVisitor.java:2025)
+	at org.eclipse.cdt.internal.core.dom.parser.cpp.CPPASTTranslationUnit.getDefinitionsInAST(CPPASTTranslationUnit.java:213)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover$ComputeSourceRunnable.findDefinitions(CSourceHover.java:517)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover$ComputeSourceRunnable.computeSourceForBinding(CSourceHover.java:225)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover$ComputeSourceRunnable.runOnAST(CSourceHover.java:139)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:215)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:310)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover.searchInIndex(CSourceHover.java:759)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CSourceHover.getHoverInfo(CSourceHover.java:586)
+	at org.eclipse.cdt.internal.ui.text.c.hover.BestMatchHover.getHoverInfo(BestMatchHover.java:100)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CEditorTextHoverProxy.getHoverInfo(CEditorTextHoverProxy.java:64)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:165)
+
+!ENTRY org.eclipse.cdt.core 4 0 2011-01-25 17:14:52.012
+!MESSAGE IOException
+!STACK 0
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.FileChannelImpl.ensureOpen(FileChannelImpl.java:91)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:642)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.markFileIncomplete(Database.java:590)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:555)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:543)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:815)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:77)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:154)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.parseTUs(PDOMIndexerTask.java:195)
+	at org.eclipse.cdt.internal.core.pdom.indexer.fast.PDOMFastIndexerTask.run(PDOMFastIndexerTask.java:102)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:90)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2011-02-07 16:21:32.573 -----------------------------------------------
+eclipse.buildId=M20071023-1652
+java.version=1.6.0_04
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_IE
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2011-02-07 16:21:39.731
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2011-03-31 14:23:33.165 -----------------------------------------------
+eclipse.buildId=M20071023-1652
+java.version=1.6.0_04
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_IE
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2011-03-31 14:23:50.234
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

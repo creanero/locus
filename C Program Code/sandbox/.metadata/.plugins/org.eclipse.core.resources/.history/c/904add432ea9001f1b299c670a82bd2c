@@ -1,0 +1,63 @@
+/*
+ ============================================================================
+ Name        : test_for_featac.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define ERR_NO_ERROR 0
+#define ERR_STRING_ERROR 1
+
+int extract_code (char *code_string, char *exit_string);
+
+int main() {
+	char *code_string = (char *) malloc(50*sizeof(char));
+
+	char *exit_string = (char *) malloc(50*sizeof(char));
+	
+	int code_length = 0;
+	
+	printf ("Enter a string");
+	scanf ("%s", code_string);
+	
+	printf("\ncode entered was %s", code_string);
+	
+	extract_code (code_string, exit_string);
+	
+	printf("\ncode returned was %s", exit_string);
+	
+	code_length = strlen (exit_string);
+	
+	if (code_length = 3)
+	{
+		printf ("\nCode %s placed in destination 1 (for length 3 strings)", exit_code);
+		return (ERR_NO_ERROR);
+	}
+	else if (code_length = 5)
+	{
+		printf ("\nCode %s placed in destination 2 (for length 5 strings)", exit_code);
+		return (ERR_NO_ERROR);
+	}
+	else //code does not match parameters
+	{
+		printf ("ERROR: CODE DOES NOT MATCH PARAMETERS");
+		return (ERR_STRING_ERROR);
+	}
+	
+	return (ERR_NO_ERROR);
+}
+
+int extract_code (char *code_string, char *exit_string)
+{
+	if (sscanf(code_string, "\t\t\t\tcode=%s", exit_string)!=1)
+	{
+		return (ERR_STRING_ERROR);
+	}
+	return (ERR_NO_ERROR);
+}

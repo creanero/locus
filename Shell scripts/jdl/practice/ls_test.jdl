@@ -1,0 +1,6 @@
+Executable = "ls_test_2.sh";
+StdOutput = "std.out";
+StdError = "std.err";
+OutputSandbox = {"std.out","std.err"};
+InputSandbox = "ittd/grid_cdm/scripts/practice/ls_test_2.sh";
+VirtualOrganisation = "cosmo";
