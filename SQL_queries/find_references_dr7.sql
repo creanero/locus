@@ -14,12 +14,12 @@ DECLARE @r_target float set @r_target = 17.69709205627;
 DECLARE @i_target float set @i_target = 17.52318382263;
 DECLARE @z_target float set @z_target = 17.46723175049;
   
--- Enter the observational parameters
-DECLARE @fov float set @fov = 0.25; -- FoV size in DEGREES for a Square FoV
+-- Enter the observational parameters: Note, these are set for the Quasar Catalogue
+DECLARE @fov float set @fov = 10./60.0; -- FoV size in DEGREES for a Square FoV (10 arcminutes)
 -- The system will automatically correct the FoV Size in RA
 DECLARE @fov_ra float set @fov_ra = @fov/@ra_corr;
 DECLARE @mag_limit float set @mag_limit = 2.0; -- magnitude difference limit
-DECLARE @col_limit float set @col_limit = 0.1;
+DECLARE @col_limit float set @col_limit = 0.1; -- colour difference limit
   
   
 -- Select position and magnitude, and calculate rating  
@@ -27,9 +27,11 @@ SELECT p.ra,p.dec,p.u,p.g,p.r,p.i,p.z,
   --for the definition of rating used here, see Creaner et al, 2019, The Locus Algorithm: A technique for identifying optimised pointings for differential photometry
   (1-abs(((p.g-@g_target)-((p.r-@r_target)))/@col_limit))*(1-abs(((p.r-@r_target)-((p.i-@i_target)))/@col_limit)) as rating
   
+ 
   -- from the Photometric Objects Catalogue
 FROM PhotoObj AS p
-   
+
+  
 WHERE 
   (
     -- Reference in a FoV centred on the pointing
@@ -60,3 +62,5 @@ AND
 		(p.r - p.i) BETWEEN ((@r_target-@i_target)-@col_limit)AND((@r_target-@i_target)+@col_limit)
   )
   
+    
+ORDER BY rating DESC
