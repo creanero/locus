@@ -2,20 +2,20 @@
 -- IMPORTANT NOTE: USE THE DR7 Context in CAS
 
 -- Enter the RA and Dec of the POINTING here
-DECLARE @point_ra float SET @point_ra=309.4971506647; -- RA in DEGREES
-DECLARE @point_dec float SET @point_dec=0.2737432692606; -- DEC in DEGREES
+DECLARE @point_ra float SET @point_ra=255.8417; -- RA in DEGREES
+DECLARE @point_dec float SET @point_dec=60.7211; -- DEC in DEGREES
 -- The system will then automatically generate a correction for angle in RA
-DECLARE @ra_corr float set @ra_corr = COS(@point_dec);
+DECLARE @ra_corr float set @ra_corr = COS(RADIANS(@point_dec));
   
 -- Enter the ugriz magnitudes of the target
-DECLARE @u_target float set @u_target = 19.3826713562;
-DECLARE @g_target float set @g_target = 18.15453338623;
-DECLARE @r_target float set @r_target = 17.69709205627;
-DECLARE @i_target float set @i_target = 17.52318382263;
-DECLARE @z_target float set @z_target = 17.46723175049;
+DECLARE @u_target float set @u_target = 19.601;
+DECLARE @g_target float set @g_target = 19.222;
+DECLARE @r_target float set @r_target = 18.766;
+DECLARE @i_target float set @i_target = 18.616;
+DECLARE @z_target float set @z_target = 18.283;
   
 -- Enter the observational parameters: Note, these are set for the Quasar Catalogue
-DECLARE @fov float set @fov = 10./60.0; -- FoV size in DEGREES for a Square FoV (10 arcminutes)
+DECLARE @fov float set @fov = 0.1666; -- FoV size in DEGREES for a Square FoV (10 arcminutes)
 -- The system will automatically correct the FoV Size in RA
 DECLARE @fov_ra float set @fov_ra = @fov/@ra_corr;
 DECLARE @mag_limit float set @mag_limit = 2.0; -- magnitude difference limit
@@ -29,7 +29,7 @@ SELECT p.ra,p.dec,p.u,p.g,p.r,p.i,p.z,
   
  
   -- from the Photometric Objects Catalogue
-FROM PhotoObj AS p
+FROM PhotoObjAll AS p
 
   
 WHERE 
