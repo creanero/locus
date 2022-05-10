@@ -1,0 +1,20 @@
+cff-version: 1.1.0
+message: "Please cite the following works when using this software: https://ui.adsabs.harvard.edu/abs/2020ascl.soft04001C"
+authors:
+- family-names: Creaner
+  given-names: Oisín
+- family-names: Hickey
+  given-names: Eugene
+- family-names: Nolan
+  given-names: Kevin
+title: "Locus: Optimized differential photometry"
+version: 6.0
+date-released: 2022-03-06
+identifiers:
+ - type: "ascl-id"
+   value: "2004.001"
+ - type: "doi"
+   value: PLACEHOLDER
+ - type: "bibcode"
+   value: "2020ascl.soft04001C"
+abstract: "Locus implements the Locus Algorithm, which maximizes the performance of differential photometry systems by optimizing the number and quality of reference stars in the Field of View with the target."
